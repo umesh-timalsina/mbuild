@@ -49,5 +49,4 @@ different licenses. See those files for their specific terms.
     data_structures
     coordinate_transforms
     recipes
-    citing_mbuild
     older_documentation
