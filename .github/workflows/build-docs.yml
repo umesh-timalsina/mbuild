@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create a new conda environment
-        id: conda create
+        id: conda
         uses: umesh-timalsina/sphinx-semantic-gh-pages@master
         with:
           envFile: docs/docs-env.yml
