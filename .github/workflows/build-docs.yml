@@ -6,7 +6,7 @@ on:
       - mbuild-rtd
 
 jobs:
-  Generate Docs and Deploy:
+  populate_gh_pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
