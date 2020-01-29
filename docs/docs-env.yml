@@ -1,0 +1,14 @@
+name: mbuild-docs
+dependencies:
+  - python=3.6
+  - pip
+  - pip:
+    - numpydoc
+    - sphinx
+    - sphinx_rtd_theme
+    - widgetsnbextension
+    - ipywidgets
+    - sphinxcontrib-svg2pdfconverter
+    - ipykernel
+    - nbsphinx
+    - mock
