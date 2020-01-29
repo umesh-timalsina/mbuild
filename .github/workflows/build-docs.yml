@@ -17,4 +17,4 @@ jobs:
           envFile: docs/docs-env.yml
           envName: mbuild-docs
           docsDir: docs
-          buildDir: docs/_build/html
+          outputDir: docs/_build/html
