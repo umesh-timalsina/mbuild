@@ -1,6 +1,9 @@
 name: mbuild-docs
+channels:
+  - conda-forge
 dependencies:
   - python=3.6
+  - pandoc
   - pip
   - pip:
     - numpydoc
@@ -12,4 +15,3 @@ dependencies:
     - ipykernel
     - nbsphinx
     - mock
-    - pandoc
