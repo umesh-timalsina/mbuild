@@ -68,8 +68,6 @@ nbsphinx_prompt_width = 1.1
 html_scaled_image_link = False
 nbsphinx_allow_errors = False
 
-
-
 # Prolog: Displayed on top of the notebook
 
 nbsphinx_prolog = r"""
@@ -212,7 +210,11 @@ hhtml_theme_path = [
     sphinx_rtd_theme.get_html_theme_path()
 ]
 
-html_context = dict(display_github=True)
+html_context = dict(display_github=True,
+                    github_repo=os.environ.get('GITHUB_REPOSITORY', '/' + project).split('/', 1)[1],
+                    github_user=os.environ.get('GITHUB_REPOSITORY', '/mosdef-hub').split('/', 1)[0],
+                    github_version=os.environ.get('GITHUB_REF', 'master'),
+                    source_suffix='.rst')
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
