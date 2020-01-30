@@ -211,6 +211,7 @@ hhtml_theme_path = [
 ]
 
 html_context = dict(display_github=True,
+                    conf_py_path='/docs/',
                     github_repo=os.environ.get('GITHUB_REPOSITORY', '/' + project).split('/', 1)[1],
                     github_user=os.environ.get('GITHUB_REPOSITORY', '/mosdef-hub').split('/', 1)[0],
                     github_version=os.environ.get('GITHUB_REF', 'master'),
